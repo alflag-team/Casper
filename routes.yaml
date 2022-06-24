@@ -2,7 +2,7 @@ routes:
 
 collections:
   /:
-    permalink: '/news/{slug}/'
+    permalink: '/{year}/{month}/{slug}/'
     template:
       - index
     filter: 'tag:news'

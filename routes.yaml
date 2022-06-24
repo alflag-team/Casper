@@ -1,0 +1,17 @@
+routes:
+
+collections:
+  /:
+    permalink: '/news/{slug}/'
+    template:
+      - index
+    filter: 'tag:news'
+  /guide/:
+    permalink: '/guide/{slug}/'
+    template:
+      - index
+    filter: 'tag:guide'
+
+taxonomies:
+  tag: /topic/{slug}/
+  author: /author/{slug}/
